@@ -1,15 +1,14 @@
 [tool.poetry]
 name = "langchain cookbook"
-version = "0.0.1"
+version = "1"
 description = "LangChain Cookbook"
-authors = []
-license = "MIT"
+authors = [
+    "supakorn emchananon <supakorn.emch@gmail.com>, supakorn emchananon <supakore@scgjwd.com>",
+]
 
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<4.0"
-
-[tool.poetry.group.docs.dependencies]
 langchain = "*"
 langchain-core = "*"
 langchain-experimental = "*"
@@ -32,3 +31,8 @@ myst-nb = "^0.17.1"
 linkchecker = "^10.2.1"
 sphinx-copybutton = "^0.5.1"
 nbdoc = "^0.0.82"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
